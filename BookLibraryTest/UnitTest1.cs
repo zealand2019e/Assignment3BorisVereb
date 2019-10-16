@@ -18,7 +18,7 @@ namespace BookLibraryTest
         [TestMethod]
         public void Test_Validation()
         {
-            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 277);
+            _ = new Book("123456789101", "CatcherInTheRye", "Jerome David Salinger", 277);
         }
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
@@ -30,7 +30,7 @@ namespace BookLibraryTest
         [ExpectedException(typeof(ArgumentException))]
         public void Test_PageNumbers()
         {
-            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 277);
+            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 0);
         }
     }
 }
